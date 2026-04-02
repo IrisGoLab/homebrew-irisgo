@@ -1,19 +1,16 @@
 class Irisgo < Formula
     desc "macOS automation agent powered by AI"
     homepage "https://github.com/IrisGoLab/irisgo-cowork"
-    url "https://github.com/IrisGoLab/irisgo-cowork/archive/refs/tags/v0.1.0.tar.gz"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    url "https://github.com/IrisGoLab/homebrew-irisgo/releases/download/v0.1.0/irisgo-0.1.0-arm64-macos.tar.gz"
+    sha256 "e2d444c87a9e5e55dc73aeadd48c5effa42fe6b229d112a2593b4dbf84460c23"
     version "0.1.0"
     license "MIT"
 
-    depends_on macos: :ventura
-
     def install
-      system "swift", "build", "-c", "release", "--disable-sandbox"
-      bin.install ".build/release/IrisGo" => "irisgo"
+      bin.install "IrisGo" => "irisgo"
     end
 
     test do
-      assert_match "irisgo", bin/"irisgo"
+      assert File.exist?(bin/"irisgo")
     end
   end
