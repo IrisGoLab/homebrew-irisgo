@@ -1,9 +1,9 @@
 class Irisgo < Formula
     desc "macOS automation agent powered by AI"
     homepage "https://github.com/IrisGoLab/irisgo-cowork"
-    url "https://github.com/IrisGoLab/homebrew-irisgo/releases/download/v0.5.0/irisgo-0.5.0-arm64-macos.tar.gz"
-    sha256 "9b79271f663081ef2c3c18dbcfbc8dd646d85a082e78886344cbddae155bbe3b"
-    version "0.5.0"
+    url "https://github.com/IrisGoLab/homebrew-irisgo/releases/download/v0.5.1/irisgo-0.5.1-arm64-macos.tar.gz"
+    sha256 "e8f7d6abc224f750df15be3dc8b03a82c0d6ddf9286de6d0fd57a764d8a5d502"
+    version "0.5.1"
     license "MIT"
 
     def install
